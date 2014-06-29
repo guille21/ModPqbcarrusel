@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension
+	type="module"
+	version="1.0"
+	client="site"
+	method="upgrade">
+	<name>Pqb Carrusel</name>
+	<author>Guillermo</author>
+	<creationDate>Junio 2014</creationDate>
+	<copyright>Copyright (C) 2011 Top Position. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>guille_55_88@hotmail.com</authorEmail>
+	<authorUrl>http://www.desarrollowebtutorial.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Pqb carrusel: usando carouFredSel</description>
+
+	<files>
+		<filename module="mod_pqbcarrusel">mod_pqbcarrusel.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_pqbcarrusel.xml</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+	</files>
+
+		<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="item_image" type="textarea" default="" label="Image Path(s)" description="Ruta de imagenes una por linea: /images/slide1.jpg" rows="5" cols="30" />
+				<field name="item_link" type="textarea" default="" label="Link(s)" description="Links por lineas" rows="5" cols="30" />
+				<field name="width" type="text" default="900" label="Width (px)" description="" />
+				<field name="height" type="text" default="180" label="Height (px)" description="" />
+				<field name="imgwidth" type="text" default="200" label="Image width (px)" description="" />
+				<field name="imgheight" type="text" default="150" label="Image height (px)" description="" />
+				<field name="duration" type="text" default="3000" label="Duration" description="" />
+				<field name="target" type="list" default="_blank" label="Abrir en" description="">
+				  <option value="_blank">Nueva ventana</option>
+				  <option value="_self">En la misma ventana</option>
+				</field>
+				<field name="items" type="text" default="" label="Items" description="Numero de Items a mover" />
+				<field name="auto" type="radio" class="btn-group" default="1" label="Auto" description="">
+				  <option value="1">YES</option>
+				  <option value="0">NO</option>
+				</field>
+				<field name="infinite" type="radio" class="btn-group" default="1" label="Infinite" description="">
+				  <option value="1">YES</option>
+				  <option value="0">NO</option>
+				</field>
+				<field name="circular" type="radio" class="btn-group" default="1" label="Circular" description="">
+				  <option value="1">YES</option>
+				  <option value="0">NO</option>
+				</field>
+				<field name="responsive" type="radio" class="btn-group" default="1" label="Responsive" description="">
+				  <option value="1">YES</option>
+				  <option value="0">NO</option>
+				</field>
+				<field name="direction" type="list" default="left" label="Direction" description="">
+				  <option value="left">Left</option>
+				  <option value="right">Right</option>
+				</field>
+				<field name="pauseonhover" type="list" default="resume" label="PauseOnHover" description="">
+				  <option value=""></option>
+				  <option value="resume">Resume</option>
+				  <option value="immediate">Immediate</option>
+				</field>
+				<field name="navigation" type="radio" class="btn-group" default="0" label="Navigation" description="">
+				  <option value="1">YES</option>
+				  <option value="0">NO</option>
+				</field>
+				<field name="prev" type="text" default="«" label="Prev text" description="" />
+				<field name="next" type="text" default="»" label="Prev text" description="" />
+				
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>	
